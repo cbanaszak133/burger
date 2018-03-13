@@ -7,12 +7,14 @@
 	<div class="row" id="lists">
 		<div class="col-md-6" id="toBeEaten">
 			<ol>
-				{{#each burgers}}
+				{{#each burger}}
 					{{#unless devoured}}
-						{{burger_name}}
-						<button class="eat-burger" data-id="{{id}}">
-							DEVOUR IT!
-						</button
+						<li>
+							{{burger_name}}
+							<button class="eat-burger" data-id="{{id}}">
+								DEVOUR IT!
+							</button
+						</li>
 					{{/unless}}
 				{{/each}}
 			</ol>
@@ -20,10 +22,13 @@
 
 		<div class="col-md-6" id="eaten">
 			<ol>
-				{{#each burgers}}
+				{{#each burger}}					
 					{{#if devoured}}
-						{{burger_name}}
+						<li>
+							{{burger_name}}
+						</li>
 					{{/if}}
+
 				{{/each}}
 			</ol>
 		</div>
@@ -40,5 +45,6 @@
 	  <button type="submit">Submit</button>
 
 	</form> 
+</div>	
 
 

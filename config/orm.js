@@ -1,5 +1,5 @@
 
-var connection = require("../config/connections.js");
+var connection = require("../config/connection.js");
 
 //Utilizing the printQuestionMarks function in order to 
 //take in values from the CatApp assignment
@@ -55,7 +55,7 @@ var orm = {
 		queryString += ") ";
 		queryString += "VALUES (";
 		queryString += printQuestionMarks(values.length);
-		querySTring += ") ";
+		queryString += ") ";
 
 		connection.query(queryString, values, function(err, result){
 			if (err) throw err;

@@ -18,7 +18,9 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 
+var routes = require("./controllers/burgersControllers.js");
 
+app.use(routes);
 
 
 app.listen(PORT, function() {
