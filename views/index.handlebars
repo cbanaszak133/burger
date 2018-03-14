@@ -1,12 +1,15 @@
 
-<img src="assets/img/hamburger.png" id="hamburger-pic">
+<div class="img-holder"><img src="assets/img/hamburger.png" id="hamburger-pic"></div>
 
-<h1>Eat Da Burger!</h1>
+<h1 class="text-center">Eat Da Burger!</h1>
+
+<div class="container"><hr></div>
 
 <div class="container">
 	<div class="row" id="lists">
 		<div class="col-md-6" id="toBeEaten">
-			<ol>
+			<h2 class="text-center">Burgers to Eat!</h2>
+			<ol class="center-block">
 				{{#each burger}}
 					{{#unless devoured}}
 						<li>
@@ -21,7 +24,8 @@
 		</div>
 
 		<div class="col-md-6" id="eaten">
-			<ol>
+			<h2 class="text-center">Eaten Burgers!</h2>
+			<ol class="center-block">
 				{{#each burger}}					
 					{{#if devoured}}
 						<li>
@@ -34,17 +38,19 @@
 		</div>
 	</div>
 
-	<h2>Add a Burger - Click Submit to Add</h2>
-	<form class="create-form">
 
-	  <div class="form-group">
-	    <label for="burg">Burger Name:</label>
-	    <input type="text" id="burg" name="name">
-	  </div>
 
-	  <button type="submit">Submit</button>
+	<div class="container"><hr></div>
 
-	</form> 
+	<h2 class="text-center">Add a Burger - Click Submit to Add</h2>
+ 	<div class="form-group" align="center">
+
+		<form class="create-form">
+		    <label id="burg-label" for="burg">Burger Name:</label>
+		    <input type="text" id="burg" name="name"><br>
+		  <button type="submit">Submit</button>
+		</form> 
+
+	 </div>
 </div>	
-
 

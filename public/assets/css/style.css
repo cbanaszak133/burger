@@ -1,4 +1,19 @@
 #hamburger-pic{
 	height:200px;
 	width:300px;
+
+}
+
+.img-holder{
+	height:200px;
+	width:300px;
+	margin:0 auto;
+}
+
+#burg{
+	width:400px;
+}
+
+body{
+	background-color:#ffd032;
 }
